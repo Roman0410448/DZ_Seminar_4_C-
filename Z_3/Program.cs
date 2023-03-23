@@ -4,16 +4,15 @@
 82 -> 10
 9012 -> 12
 */
-
-int number = ReadInt("Введите число: ");
-int len = NumberLen(number);
-SumNumbers(number, len);
-
 int ReadInt(string message)
 {
     Console.Write(message);
     return Convert.ToInt32(Console.ReadLine());
 }
+
+int number = ReadInt("Введите число: ");
+int len = NumberLen(number);
+SumNumbers(number, len);
 
 // Функция подсчета цифр в числе
 int NumberLen(int a)
